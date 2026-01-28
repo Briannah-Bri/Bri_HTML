@@ -12,7 +12,8 @@ body{
 
 .home-page{
     background-image: url(wooden.webp);
-    width: 650px;
+    width: 90%;
+    max-width: 650px;
     height: auto;
     border-radius: 10px;
     display:inline-block;
@@ -27,12 +28,22 @@ body{
     padding: 30px;
     border-radius: 5px;
     word-spacing: 110px;
-    font-weight:900PX;
+    font-weight: 900;
     width: auto;
     margin-top:auto;
     top: 0;
     left: 0;
     
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
 }
 
 .navbar a{
@@ -49,7 +60,7 @@ body{
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3 ease-in-out;
+    transition: background-color 0.3s ease-in-out;
     font-family: monospace;
     opacity: 0.9;
 
@@ -79,14 +90,13 @@ button{
     display: inline-block;
     gap: 5px;
     margin:3px;  
-    align-items: justify;
     justify-content: center;
 }
 
 button:hover{
     background-color:rgb(136, 127, 255);
     cursor: pointer;
-    transition: background-color 0.3 ease;
+    transition: background-color 0.3s ease;
     opacity: 0.8;
 }
 
@@ -99,28 +109,46 @@ button:hover{
 }
 .signin{
     background-color: rgba(13, 35, 231, 0.856);
-    padding: none;
+    padding: 2px;
     padding-left: 70px;
     padding-right: 70px;
     text-align: center;
+    color: hsl(120, 41%, 11%);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
-.signin a{
-    text-decoration: none;
-    color: hsl(120, 41%, 11%);
+.signin:hover{
+    background-color:rgb(136, 127, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.8;
 }
 
 .register{
     background-color: rgb(255, 0, 0);
+    padding: 2px;
     padding-left: 70px;
     padding-right: 70px;
     text-align: center;
     color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
-.register a{
-    text-decoration: none;
-    color: hsl(120, 41%, 11%);
+.register:hover{
+    background-color:rgb(136, 127, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.8;
 }
 
 .daily{
@@ -158,14 +186,24 @@ button:hover{
     background-color: rgb(17, 168, 17);
     margin:20px;
     align-items:center;
+    padding: 2px;
     padding-right: 70px;
     padding-left: 70px;
     margin-left: 70px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: hsl(120, 41%, 11%);
 }
 
-.call a{
-    text-decoration: none;
-    color: hsl(120, 41%, 11%);
+.call:hover{
+    background-color:rgb(136, 127, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.8;
 }
 
 .footer{
@@ -179,4 +217,377 @@ button:hover{
     display: inline;
     box-sizing: content-box;
 
+}
+
+/* Contact page styles */
+.contact-box{
+    background:linear-gradient(45deg, #fff,#86d, #95d,#83d,#94d);
+    height: 60vh;
+    width: 400px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 60px;
+    color:black;
+    gap:10px;
+    align-items: center;
+}
+
+.contact-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-box li {
+    list-style: none;
+}
+
+.contact-box .container{
+    background-color: aqua;
+    height: 4vh;
+    width: 70px;
+    border-radius:4px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-box .container a{
+    text-decoration: none;
+    color: #83d;
+}
+
+.contact-box .container:hover{
+    background-color: black;
+    transition: background-color 0.3s ease;
+    transform: scale(1.2) translateX(10px);
+}
+
+.Whatsapp{
+    background-color: bisque;
+    height: 4vh;
+    width: 70px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top:40px;
+}
+
+.Whatsapp a{
+    text-decoration: none;
+    color: hsl(120, 41%, 11%);
+}
+
+.Whatsapp:hover{
+    background-color:greenyellow;
+    transition: background-color 0.3s ease;
+    transform: translateY(10px);
+}
+
+.telegram{
+    background-color: cornflowerblue;
+    height: 4vh;
+    width: 70px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top:40px;
+}
+
+.telegram a{
+    text-decoration: none;
+    color: hsl(120, 41%, 11%);
+}
+
+.telegram:hover{
+    background-color: aquamarine;
+    transition: all 0.3s ease;
+    transform: translateX(-10px);
+}
+
+.X{
+    background-color: darkgray;
+    height: 4vh;
+    width: 70px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top:40px;
+}
+
+.X a{
+    text-decoration: none;
+    color: hsl(120, 41%, 11%);
+}
+
+.X:hover{
+    background-color: yellow;
+    transition: background-color 0.3s ease;
+    transform: translateX(10px);
+}
+
+.contact-box h1{
+    text-align: justify;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.home-box{
+    background-color:#d419ac;
+    border-radius: 5px;
+    width:70px;
+    height:3vh;
+    text-align: center;
+    margin-top:40px;
+    padding: 5px;
+}
+
+.home-box a{
+    text-decoration: none;
+    color: hsl(120, 41%, 11%);
+}
+
+.home-box:hover{
+    background-color: #9117afe0;
+    transition: background-color 0.3s ease;
+}
+
+/* Register page styles */
+.register-box{
+    background:blueviolet;
+    padding: 70px;
+    width: 250px;
+    height: 60vh;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    gap: 10px;
+}
+
+.register-box h2{
+    margin-bottom: 20px;
+    color:white;
+    font-family: auto;
+}
+
+.register-box input{
+    width: 250px;
+    color: #27ae60;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    background-color: white;
+    font-family: monospace;
+}
+
+.register-box button{
+    width: 150px;
+    padding: 12px;
+    background: #2ecc71;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top:10px;
+    font-family: auto;
+}
+
+.register-box button:hover{
+    background: #27ae60;
+}
+
+.register-box p{
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: auto;
+}
+
+.register-box p a{
+    text-decoration: none;
+    color: hsl(120, 41%, 11%);
+}
+
+/* Sign up (login) page styles */
+.login-box{
+    background-color:blueviolet;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box h2{
+    margin-bottom: 20px;
+    color: #333;
+    font-family: auto;
+}
+
+.login-box input{
+    width: 250px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-family: monospace;
+}
+
+.login-box button{
+    width: 100px;
+    padding: 12px;
+    background-color:#3498db;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: auto;
+}
+
+.login-box button:hover{
+    background:#2980b9;
+    animation: alternate-reverse;
+    transition: background-color 0.3s ease;
+}
+
+.login-box p{
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: auto;
+}
+
+.login-box p a{
+    color: rgb(176, 191, 230);
+    text-decoration: none;
+}
+
+/* Help page styles */
+.help-box{
+    background-color: #333;
+    width:auto;
+    height:auto;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+.help-box .login-box{
+    background-color: rgb(255, 94, 0);
+    width:auto;
+    border-radius: 5px;
+    text-align:justify;
+    margin-left: 0px;
+    font-size: 15px;
+    padding-right:2px;
+    margin-bottom: 10px;
+}
+
+.question{
+    background-color: aquamarine;
+    border-radius: 4px;
+    width: auto;
+}
+
+.answer{
+    width:auto;
+    overflow-x: hidden;
+}
+
+.help-box .home-box{
+    background-color: aqua;
+    width: 50px;
+    margin:5px;
+    margin-left: 10px;
+    border-radius: 3px;
+    text-align:center;
+    cursor: pointer;
+}
+
+/* About page styles */
+.about-box {
+    background-color:magenta;
+    padding: 20px;
+    width: 420px;
+    height: 200px;
+    margin-top: 40px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.about-box h1{
+    text-align:justify;
+    color:blue;
+}
+
+.about-box p{
+    color: #fff;
+    text-align: justify;
+}
+
+.about-box .home-box{
+    background-color:#fff;
+    padding: 5px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+/* Responsive media queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        word-spacing: 20px;
+        padding: 15px;
+    }
+    
+    .home-page {
+        width: 95%;
+        margin: 20px auto;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .daily, .weekly, .monthly {
+        width: 90%;
+        margin: 5px auto;
+    }
+    
+    .contact-box {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    .register-box, .login-box {
+        width: 90%;
+        max-width: 250px;
+        padding: 30px 20px;
+    }
+    
+    .about-box {
+        width: 90%;
+        max-width: 420px;
+        height: auto;
+    }
 }
