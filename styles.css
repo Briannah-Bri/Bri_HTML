@@ -36,6 +36,16 @@ body{
     
 }
 
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+}
+
 .navbar a{
     color:white;
     text-decoration: none;
@@ -80,7 +90,6 @@ button{
     display: inline-block;
     gap: 5px;
     margin:3px;  
-    align-items: justify;
     justify-content: center;
 }
 
@@ -100,28 +109,46 @@ button:hover{
 }
 .signin{
     background-color: rgba(13, 35, 231, 0.856);
-    padding: none;
+    padding: 2px;
     padding-left: 70px;
     padding-right: 70px;
     text-align: center;
+    color: hsl(120, 41%, 11%);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
-.signin a{
-    text-decoration: none;
-    color: hsl(120, 41%, 11%);
+.signin:hover{
+    background-color:rgb(136, 127, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.8;
 }
 
 .register{
     background-color: rgb(255, 0, 0);
+    padding: 2px;
     padding-left: 70px;
     padding-right: 70px;
     text-align: center;
     color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
-.register a{
-    text-decoration: none;
-    color: hsl(120, 41%, 11%);
+.register:hover{
+    background-color:rgb(136, 127, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.8;
 }
 
 .daily{
@@ -159,14 +186,24 @@ button:hover{
     background-color: rgb(17, 168, 17);
     margin:20px;
     align-items:center;
+    padding: 2px;
     padding-right: 70px;
     padding-left: 70px;
     margin-left: 70px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: hsl(120, 41%, 11%);
 }
 
-.call a{
-    text-decoration: none;
-    color: hsl(120, 41%, 11%);
+.call:hover{
+    background-color:rgb(136, 127, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.8;
 }
 
 .footer{
@@ -196,6 +233,16 @@ button:hover{
     color:black;
     gap:10px;
     align-items: center;
+}
+
+.contact-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-box li {
+    list-style: none;
 }
 
 .contact-box .container{
@@ -254,7 +301,7 @@ button:hover{
 
 .telegram:hover{
     background-color: aquamarine;
-    transition: all;
+    transition: all 0.3s ease;
     transform: translateX(-10px);
 }
 
@@ -274,7 +321,7 @@ button:hover{
 
 .X:hover{
     background-color: yellow;
-    transition: 6ms;
+    transition: background-color 0.3s ease;
     transform: translateX(10px);
 }
 
@@ -468,7 +515,6 @@ button:hover{
 /* About page styles */
 .about-box {
     background-color:magenta;
-    justify-content:justify;
     padding: 20px;
     width: 420px;
     height: 200px;
